@@ -53,5 +53,19 @@ if(isset($_REQUEST['fineS'])){ ?>
 	</script>
 <?php }
 
+
+//msj para informar que el recaptcha esta vacio
+if(isset($_REQUEST['cp'])){ ?>
+	<script type='text/javascript'>
+		toastr.warning('Error, verifica el recaptcha esta vacio.');
+	</script>
+<?php }
+
+//recaptcha incorrecto
+if(isset($_REQUEST['cp'])){ ?>
+	<script type='text/javascript'>
+		toastr.error('Error, verifica el recaptcha esta vacio.');
+	</script>
+<?php }
 ?>
 <!--- FIN DE LOS MENSAJES PERSONALIZADOS -->

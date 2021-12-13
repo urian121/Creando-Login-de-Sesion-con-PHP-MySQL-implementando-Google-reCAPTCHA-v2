@@ -22,7 +22,7 @@ if (isset($_SESSION['emailUser']) != "") {
     <a class="navbar-brand" href="https://blogangular-c7858.web.app" style="color:#fff;">
      <strong style="color:#333;">Canal WebDeveloper</strong>
     </a>
-    <span><a href="salirSesion.php?email=<?php echo $email; ?>" style="color: #333; font-weight: bold;">Salir</a></span>
+    <span><a href="closedSesion.php?email=<?php echo $email; ?>" style="color: #333; font-weight: bold;">Salir</a></span>
   </div>
 </nav>
 
