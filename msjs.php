@@ -61,11 +61,5 @@ if(isset($_REQUEST['cp'])){ ?>
 	</script>
 <?php }
 
-//recaptcha incorrecto
-if(isset($_REQUEST['cp'])){ ?>
-	<script type='text/javascript'>
-		toastr.error('Error, verifica el recaptcha esta vacio.');
-	</script>
-<?php }
 ?>
 <!--- FIN DE LOS MENSAJES PERSONALIZADOS -->

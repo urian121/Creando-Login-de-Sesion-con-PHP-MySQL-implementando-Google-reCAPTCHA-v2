@@ -232,10 +232,11 @@ https://codepen.io/vineethtrv/pen/NWxZqMM
   }
   
 
-  /*centrando reCAPTCHA*/
+/*centrando reCAPTCHA*/
   .text-center {
-      text-align: center;
-    }
-    .g-recaptcha {
-      display: inline-block;
-    }
+	text-align: center;
+  }
+  .g-recaptcha {
+	display: inline-block;
+  }
+  

@@ -32,7 +32,7 @@
 					<p> - - - - - - - - - - - - - - - -</p>
 				</div>
 		
-				<form class="formulario" name="formulario" action="validationSetion.php" method="POST">
+				<form class="formulario" name="formulario" action="validarSesionLogin.php" method="POST">
 					<label for="nombre">Correo Electrónico</label>
 					<div class="contenedor-input">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
@@ -53,7 +53,7 @@
 					<!--codigo del recaptcha  de google -->
 					<div class="text-center">
 						<div class="g-recaptcha"
-							data-sitekey="6LesUJ4dAAAAAOu-C3kJuGPtJOQgaMniDtJN5adD">
+							data-sitekey="6LcE7awdAAAAABCKLTte7CaISw2wEbBRzAgdVpjY">
 						</div>
 					</div>
 					<!-- fin del recaptcha-->
@@ -74,5 +74,7 @@
 		</div> 
 	</div>
 
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
