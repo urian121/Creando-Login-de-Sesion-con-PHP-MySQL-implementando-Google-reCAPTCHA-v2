@@ -22,6 +22,11 @@ if(($_SERVER["REQUEST_METHOD"] == "POST")){
 		$emailUser     = ($_POST['emailUser']);
 		$passwordUser  = ($_POST["passwordUser"]); 
 
+		/*https://bugs.mysql.com/bug.php?id=71939
+		Nota: hay que ejecutar estas consultas sql
+		ALTER TABLE myusers CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+		ALTER DATABASE MyDataBase COLLATE utf8_bin
+		*/
 
 		$sqlVerificandoLogin = ("SELECT IdUser, nameUser, emailUser, passwordUser  FROM myusers WHERE emailUser COLLATE utf8_bin='$emailUser'");
 		$resultLogin = mysqli_query($con, $sqlVerificandoLogin) or die(mysqli_error($con));;
