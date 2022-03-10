@@ -2,8 +2,8 @@
 if(isset($_POST["submit"]) && $_SERVER["REQUEST_METHOD"] == "POST"){
 	include('conexion/config.php');
 	$emailUser 		 = trim($_REQUEST['emailUser']);
-	$passwordUser    = trim($_REQUEST['passwordUser']);
-	$nameUser  		 = $_REQUEST['nameUser'];
+	$passwordUser            = trim($_REQUEST['passwordUser']);
+	$nameUser  		 = filter_var($_REQUEST['nameUser'], FILTER_SANITIZE_STRING);
 	date_default_timezone_set("America/Bogota");
 	$createUser              = date("Y-m-d H:i:A");
 
