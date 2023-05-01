@@ -35,7 +35,7 @@ if(($_SERVER["REQUEST_METHOD"] == "POST")){
 		*/
 
 		$sqlVerificandoLogin = ("SELECT IdUser, nameUser, emailUser, passwordUser  FROM myusers WHERE emailUser COLLATE utf8_bin='$emailUser'");
-		$resultLogin = mysqli_query($con, $sqlVerificandoLogin) or die(mysqli_error($con));;
+		$resultLogin = mysqli_query($con, $sqlVerificandoLogin) or die(mysqli_error($con));
 
 		if(mysqli_num_rows($resultLogin) == 1){
 			while($rowData  = mysqli_fetch_assoc($resultLogin)){
